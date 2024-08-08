@@ -2,7 +2,7 @@ import { UseFormRegister, FieldValues, RegisterOptions, FieldError, Path } from 
 
 // Define a type for input properties, where T is the form data type
 interface InputProps<T extends FieldValues> {
-  id: Path<T>; // Ensure id is a key of FormData
+  id: Path<T>;
   type?: string;
   label: string;
   register: UseFormRegister<T>;
