@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom classes */
+.custom-dark-bg {
+  @apply bg-gray-800 text-gray-100;
+}
+
+.custom-light-bg {
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Apply classes to elements based on mode */
+body {
+  @apply custom-light-bg;
+}
+
+.dark body {
+  @apply custom-dark-bg;
+}
